@@ -47,5 +47,4 @@ module "ecr_docker_build" {
   dockerfile_folder = "${path.module}/"
   aws_region = data.aws_region.current.id
   ecr_repository_url = aws_ecr_repository.this.repository_url
-  aws_profile = "zamboni-training"
 }
